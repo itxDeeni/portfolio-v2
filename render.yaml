@@ -1,0 +1,13 @@
+version: 1
+services:
+  - type: web
+    name: portfolio-v2
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: node .output/server/index.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
