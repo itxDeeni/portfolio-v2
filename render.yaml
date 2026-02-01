@@ -2,12 +2,15 @@ version: 1
 services:
   - type: web
     name: portfolio-v2
-    env: node
-    region: oregon
-    plan: free
-    branch: main
-    buildCommand: npm install && npm run build
-    startCommand: node .output/server/index.mjs
-    envVars:
-      - key: NODE_VERSION
-        value: 20
+    env: static
+    buildCommand: npm install && npm run generate
+    staticPublishPath: .output/public
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
