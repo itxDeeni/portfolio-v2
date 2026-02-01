@@ -10,4 +10,4 @@ services:
     startCommand: node .output/server/index.mjs
     envVars:
       - key: NODE_VERSION
-        value: 18.17.0
+        value: 20
