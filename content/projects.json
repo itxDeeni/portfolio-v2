@@ -1,0 +1,255 @@
+{
+    "featured": [
+        {
+            "id": "idor-scan",
+            "title": "IDOR-Scan",
+            "type": "Security Tool",
+            "description": "Automated IDOR & Access Control Testing for REST APIs. Replays API requests with manipulated authentication contexts to identify Insecure Direct Object Reference and Broken Object-Level Authorization vulnerabilities.",
+            "features": [
+                "Import Postman collections & OpenAPI specs",
+                "Replay requests with swapped user contexts",
+                "Role matrix testing for admin/user/guest",
+                "CI/CD integration ready",
+                "JSON/HTML professional reports"
+            ],
+            "tags": [
+                "Go",
+                "Security",
+                "API Testing",
+                "CLI",
+                "OWASP"
+            ],
+            "github": "https://github.com/itxDeeni/idor-scan",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
+            "id": "tradekit",
+            "title": "TradeKit",
+            "type": "Trading Infrastructure",
+            "description": "Crypto trading infrastructure for developers and trading firms. Provides unified exchange connectors, real-time market data streams, and a strategy framework for building and backtesting trading algorithms.",
+            "features": [
+                "Binance & Bybit exchange integration",
+                "Real-time WebSocket market data",
+                "Strategy backtesting engine",
+                "Vue.js web dashboard",
+                "Paper trading mode"
+            ],
+            "tags": [
+                "Go",
+                "Vue.js",
+                "Crypto",
+                "Trading",
+                "WebSockets",
+                "Fintech"
+            ],
+            "github": null,
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
+            "id": "telegram-scraper",
+            "title": "Freelance Scraper",
+            "type": "Automation Tool",
+            "description": "Go-based tool to scrape and filter freelance tech gigs from public Telegram channels. Filters for tech-related keywords and exports structured data for analysis.",
+            "features": [
+                "Scrapes public Telegram channels",
+                "Tech keyword filtering",
+                "Pagination handling",
+                "JSON export"
+            ],
+            "tags": [
+                "Go",
+                "Web Scraping",
+                "Automation"
+            ],
+            "github": "https://github.com/itxDeeni/Telegram-Scraper",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
+            "id": "calcengine",
+            "title": "CalcEngine",
+            "type": "Rules Engine",
+            "description": "YAML-based calculation engine with dynamic formula evaluation. Define complex business rules in YAML and evaluate them with a REST API or web UI.",
+            "features": [
+                "YAML rule definitions",
+                "Dynamic formula evaluation",
+                "REST API interface",
+                "React web UI",
+                "Fintech-ready"
+            ],
+            "tags": [
+                "Go",
+                "React",
+                "Rules Engine",
+                "Fintech"
+            ],
+            "github": null,
+            "demo": null,
+            "featured": true,
+            "image": null
+        }
+    ],
+    "github": {
+        "security": [
+            {
+                "name": "PimpMyParrot",
+                "description": "Parrot OS setup/installation script for pentesting tools",
+                "tags": [
+                    "Bash",
+                    "Linux",
+                    "Security"
+                ],
+                "github": "https://github.com/itxDeeni/PimpMyParrot"
+            }
+        ],
+        "backend": [
+            {
+                "name": "recipe-app-api",
+                "description": "Recipe API with Django REST Framework",
+                "tags": [
+                    "Python",
+                    "Django",
+                    "REST API"
+                ],
+                "github": "https://github.com/itxDeeni/recipe-app-api"
+            },
+            {
+                "name": "quick-poll-spring-rest-api",
+                "description": "Polling REST API with Spring Boot",
+                "tags": [
+                    "Java",
+                    "Spring Boot"
+                ],
+                "github": "https://github.com/itxDeeni/quick-poll-spring-rest-api"
+            },
+            {
+                "name": "spring-crud-demo-student",
+                "description": "CRUD demo with Spring Boot",
+                "tags": [
+                    "Java",
+                    "Spring Boot"
+                ],
+                "github": "https://github.com/itxDeeni/spring-crud-demo-student"
+            },
+            {
+                "name": "node-ts-express-jwt",
+                "description": "Express.js with TypeScript and JWT authentication",
+                "tags": [
+                    "TypeScript",
+                    "Node.js",
+                    "JWT"
+                ],
+                "github": "https://github.com/itxDeeni/node-ts-express-jwt"
+            },
+            {
+                "name": "nestjs-task-management",
+                "description": "Task management API with NestJS",
+                "tags": [
+                    "TypeScript",
+                    "NestJS"
+                ],
+                "github": "https://github.com/itxDeeni/nestjs-task-management"
+            },
+            {
+                "name": "notedly",
+                "description": "Note-taking API",
+                "tags": [
+                    "Node.js"
+                ],
+                "github": "https://github.com/itxDeeni/notedly"
+            },
+            {
+                "name": "messages",
+                "description": "Messaging service backend",
+                "tags": [
+                    "Node.js"
+                ],
+                "github": "https://github.com/itxDeeni/messages"
+            },
+            {
+                "name": "mini-blog-backend",
+                "description": "Blog backend API",
+                "tags": [
+                    "Node.js"
+                ],
+                "github": "https://github.com/itxDeeni/mini-blog-backend"
+            },
+            {
+                "name": "ticket-tracking-be",
+                "description": "Ticket tracking backend",
+                "tags": [
+                    "Node.js"
+                ],
+                "github": "https://github.com/itxDeeni/ticket-tracking-be"
+            }
+        ],
+        "fullstack": [
+            {
+                "name": "clients-chat-app",
+                "description": "Real-time chat application",
+                "tags": [
+                    "Node.js",
+                    "WebSockets"
+                ],
+                "github": "https://github.com/itxDeeni/clients-chat-app"
+            },
+            {
+                "name": "FullstackMEVN",
+                "description": "MongoDB, Express, Vue, Node stack application",
+                "tags": [
+                    "Vue.js",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "github": "https://github.com/itxDeeni/FullstackMEVN"
+            },
+            {
+                "name": "Vue-Crud",
+                "description": "CRUD operations with Vue.js",
+                "tags": [
+                    "Vue.js"
+                ],
+                "github": "https://github.com/itxDeeni/Vue-Crud"
+            },
+            {
+                "name": "Notes-app",
+                "description": "Note-taking application",
+                "tags": [
+                    "JavaScript"
+                ],
+                "github": "https://github.com/itxDeeni/Notes-app"
+            }
+        ],
+        "other": [
+            {
+                "name": "SQL-Interpreter",
+                "description": "SQL query interpreter",
+                "tags": [
+                    "Python"
+                ],
+                "github": "https://github.com/itxDeeni/SQL-Interpreter"
+            },
+            {
+                "name": "Web-Scraper-with-Node",
+                "description": "Web scraping tool",
+                "tags": [
+                    "Node.js"
+                ],
+                "github": "https://github.com/itxDeeni/Web-Scraper-with-Node"
+            },
+            {
+                "name": "Trivial-pursuit",
+                "description": "Trivia game",
+                "tags": [
+                    "JavaScript"
+                ],
+                "github": "https://github.com/itxDeeni/Trivial-pursuit"
+            }
+        ]
+    }
+}
