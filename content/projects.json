@@ -1,6 +1,31 @@
 {
     "featured": [
         {
+            "id": "portfolio-v2",
+            "title": "Portfolio v2",
+            "type": "Web Application",
+            "description": "Matrix-themed portfolio built with Nuxt 3, featuring animated background, dynamic blog system, and terminal UI aesthetic. Showcases modern web development with Vue 3, TypeScript, and Nuxt Content.",
+            "features": [
+                "Animated Matrix rain background",
+                "Terminal/hacker UI theme",
+                "Blog system with Nuxt Content",
+                "Contact form with WhatsApp integration",
+                "Responsive design with glassmorphism",
+                "SEO-optimized with static generation"
+            ],
+            "tags": [
+                "Nuxt 3",
+                "Vue.js",
+                "TypeScript",
+                "CSS",
+                "Frontend"
+            ],
+            "github": "https://github.com/itxDeeni/portfolio-v2",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
             "id": "idor-scan",
             "title": "IDOR-Scan",
             "type": "Security Tool",
