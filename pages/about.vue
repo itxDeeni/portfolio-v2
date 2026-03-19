@@ -8,7 +8,7 @@
           </h1>
           
           <div class="bio-section">
-            <p class="lead">{{ profile.bio }}</p>
+            <p v-for="(paragraph, index) in profile.about" :key="index" class="lead" v-html="paragraph"></p>
             
             <div class="stats-grid">
               <div v-for="stat in profile.stats" :key="stat.label" class="stat-item">

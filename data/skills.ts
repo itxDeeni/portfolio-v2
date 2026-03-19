@@ -29,7 +29,8 @@ export const skills = {
         icon: '🎨',
         items: [
             { name: 'Vue.js', level: 80 },
-            { name: 'React', level: 70 },
+            { name: 'Angular', level: 60 },
+            { name: 'React', level: 50 },
             { name: 'Tailwind CSS', level: 85 },
             { name: 'HTML/CSS', level: 90 }
         ]

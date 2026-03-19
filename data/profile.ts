@@ -8,6 +8,15 @@ export const profile = {
 
     shortBio: `I build high-performance APIs and secure financial systems. Currently exploring Go and cloud-native architectures.`,
 
+    about: [
+        `I am a backend engineer based in Lagos, Nigeria. My core interests lie at the intersection of backend development, DevSecOps, and fintech. I'm also passionate about information security and actively participate in bug bounty challenges, with a particular focus on finding improper access control and information disclosure vulnerabilities. I enjoy building robust applications and currently work primarily with Go, Java, and Node.js.`,
+        `Outside of coding, I enjoy reading, tennis, practising martial arts and getting my hands dirty with DIY maintenance on my K24 Honda Accord. I also contribute to the free and open-source software community. For instance, I built and maintain PimpMyParrot, an open-source tool designed to automate the setup of Parrot OS for penetration testing.`,
+        `I currently work as a Software Development Engineer at a fintech, where I focus on developing secure financial technologies. Continual learning is a big part of my journey, and one of my long-term professional goals is to become a Google Developer Expert (GDE) for Google Cloud.`,
+        `If you're interested in cybersecurity or penetration testing, feel free to check out PimpMyParrot and contribute to the project on my GitHub or GitLab profiles.`,
+        `I am currently building out my main portfolio site at zahradeen.com, where you'll soon be able to find more information on how to contact me, read the technical articles I've written, and check out my other projects. You can also find me online under the handle @Itxdeeni.`,
+        `<strong>Travel & Relocation:</strong> I have a strong interest in experiencing new cultures and am actively researching options for relocating internationally, with a particular eye on countries like Brazil or Mexico.`
+    ],
+
     email: 'zahradeenmuazu@yahoo.com',
     whatsapp: '+2348078236426',
     github: 'https://github.com/itxDeeni',

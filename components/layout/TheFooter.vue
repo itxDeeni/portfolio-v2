@@ -34,7 +34,7 @@
       <div class="footer-bottom">
         <p class="copyright">
           <span class="comment">// </span>
-          © {{ currentYear }} Zahradeen Muazu. Built with Vue.js
+          Copyright © {{ currentYear }} — Zahradeen Muazu.
         </p>
         <p class="footer-ascii">
           &lt;/&gt; with ❤️ from Lagos
