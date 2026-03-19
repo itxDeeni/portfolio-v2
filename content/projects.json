@@ -1,6 +1,26 @@
 {
     "featured": [
         {
+            "id": "suya-com-ng",
+            "title": "Suyadotcom",
+            "type": "E-commerce Platform",
+            "description": "A premium Suya & Grill web platform for authentic Lafia taste, featuring online ordering, menu showcase, and a late-night delivery service.",
+            "features": [
+                "Online ordering functionality",
+                "Menu and gallery integration",
+                "Responsive design"
+            ],
+            "tags": [
+                "Nuxt",
+                "Vue.js",
+                "E-commerce"
+            ],
+            "github": null,
+            "demo": "https://suya.com.ng",
+            "featured": true,
+            "image": null
+        },
+        {
             "id": "portfolio-v2",
             "title": "Portfolio v2",
             "type": "Web Application",
@@ -21,7 +41,7 @@
                 "Frontend"
             ],
             "github": "https://github.com/itxDeeni/portfolio-v2",
-            "demo": null,
+            "demo": "https://zahradeen.com",
             "featured": true,
             "image": null
         },

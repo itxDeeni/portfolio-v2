@@ -1,10 +1,10 @@
 // Profile data from CV
 export const profile = {
     name: 'Zahradeen Muazu',
-    title: 'Backend Engineer',
+    title: 'Software Engineer',
     tagline: 'Building scalable, secure systems in fintech',
 
-    bio: `Backend Engineer with 4 years of professional experience building scalable, secure systems in the fintech space. Specialises in high-performance APIs, credit scoring tools, and loan processing services using TypeScript, Java, Python, Redis, and PostgreSQL. Currently deepening expertise in Go and cloud-native architectures for finance infrastructure.`,
+    bio: `Software Engineer with 4 years of professional experience building scalable, secure systems in the fintech space. Specialises in high-performance APIs, credit scoring tools, and loan processing services using TypeScript, Angular, Java, Python, Redis, and PostgreSQL. Currently deepening expertise in Go and cloud-native architectures for finance infrastructure.`,
 
     shortBio: `I build high-performance APIs and secure financial systems. Currently exploring Go and cloud-native architectures.`,
 

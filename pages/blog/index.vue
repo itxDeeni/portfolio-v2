@@ -5,7 +5,7 @@
         <h1>
           <span class="prompt">➜</span> /var/log/thoughts
         </h1>
-        <p class="lead">Insights on backend engineering, security, and fintech.</p>
+        <p class="lead">Insights on software engineering, security, and fintech.</p>
       </header>
       
       <div class="blog-grid">

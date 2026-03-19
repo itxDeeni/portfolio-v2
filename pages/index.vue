@@ -13,12 +13,12 @@
                   <h1 class="name">
                     <LazyCommonGlitchText text="Zahradeen Muazu" tag="span" />
                   </h1>
-                  <h2 class="title">Backend Engineer</h2>
+                  <h2 class="title">Software Engineer</h2>
                   <p class="bio">
                     Building <span class="highlight">scalable</span>, <span class="highlight">secure</span> systems in fintech.
                   </p>
                   <p class="stack-line">
-                    <span class="label">Stack:</span> [Go, Java, Python, TypeScript, Docker]
+                    <span class="label">Stack:</span> [Go, Java, Python, TypeScript, Angular, Docker]
                   </p>
                 </div>
                 
