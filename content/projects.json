@@ -67,6 +67,50 @@
     ],
     "featured": [
         {
+            "id": "pimpmyparrot",
+            "title": "PimpMyParrot",
+            "type": "Open Source Tool",
+            "description": "Open-source automation script that sets up Parrot OS with a curated collection of penetration testing tools in one go. Eliminates the tedious manual setup process for security researchers and bug bounty hunters.",
+            "features": [
+                "Automated Parrot OS setup",
+                "Curated pentesting toolset",
+                "One-command installation",
+                "Actively maintained"
+            ],
+            "tags": [
+                "Bash",
+                "Linux",
+                "Security",
+                "Open Source"
+            ],
+            "github": "https://github.com/itxDeeni/PimpMyParrot",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
+            "id": "mac-dev-setup",
+            "title": "Mac Dev Setup",
+            "type": "Developer Tool",
+            "description": "Automated macOS developer environment setup script. Installs and configures essential tools, runtimes, and applications for a productive software engineering workflow out of the box.",
+            "features": [
+                "One-script macOS setup",
+                "Installs dev tools and runtimes",
+                "Configures shell and dotfiles",
+                "Idempotent and rerunnable"
+            ],
+            "tags": [
+                "Bash",
+                "macOS",
+                "Automation",
+                "Open Source"
+            ],
+            "github": "https://github.com/itxDeeni/mac-dev-setup",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
             "id": "suya-com-ng",
             "title": "Suyadotcom",
             "type": "E-commerce Platform",

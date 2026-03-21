@@ -6,9 +6,14 @@
           <span class="prompt">➜</span> Initialize_Comms
         </h1>
         
-        <p class="text-center lead">
-          Ready to collaborate on secure, scalable systems.
-        </p>
+        <div class="open-to-work">
+          <span class="comment-line">/** 
+           * I'm currently looking for new opportunities,
+           * and my inbox is always open. Whether you have 
+           * a question, a project idea, or just want to say hi,
+           * I'll do my best to get back to you!
+           */</span>
+        </div>
         
         <div class="contact-card">
           <LazyCommonTerminal title="message.sh">
@@ -119,6 +124,21 @@ const submitForm = async () => {
 
 .lead {
   color: var(--text-secondary);
+}
+
+.open-to-work {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.comment-line {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  white-space: pre-line;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
 }
 
 .form-group {
