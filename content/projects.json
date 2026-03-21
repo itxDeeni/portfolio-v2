@@ -111,72 +111,37 @@
             "image": null
         },
         {
-            "id": "suya-com-ng",
-            "title": "Suyadotcom",
-            "type": "E-commerce Platform",
-            "description": "A premium Suya & Grill web platform for authentic Lafia taste, featuring online ordering, menu showcase, and a late-night delivery service.",
+            "id": "bank-statement-processing",
+            "title": "Bank Statement Processing System",
+            "type": "Fintech Backend",
+            "description": "Centralised backend application connecting with partner APIs to fetch customer bank statements and transform them into multiple output formats for downstream financial services.",
             "features": [
-                "Online ordering functionality",
-                "Menu and gallery integration",
-                "Responsive design"
+                "Multi-partner API integrations",
+                "Multiple output format transformations",
+                "High-throughput processing pipeline"
             ],
-            "tags": [
-                "Nuxt",
-                "Vue.js",
-                "E-commerce"
-            ],
+            "tags": ["Node.js", "TypeScript", "REST API", "Fintech"],
             "github": null,
-            "demo": "https://suya.com.ng",
-            "featured": true,
-            "image": null
-        },
-        {
-            "id": "portfolio-v2",
-            "title": "Portfolio v2",
-            "type": "Web Application",
-            "description": "Matrix-themed portfolio built with Nuxt 3, featuring animated background, dynamic blog system, and terminal UI aesthetic. Showcases modern web development with Vue 3, TypeScript, and Nuxt Content.",
-            "features": [
-                "Animated Matrix rain background",
-                "Terminal/hacker UI theme",
-                "Blog system with Nuxt Content",
-                "Contact form with WhatsApp integration",
-                "Responsive design with glassmorphism",
-                "SEO-optimized with static generation"
-            ],
-            "tags": [
-                "Nuxt 3",
-                "Vue.js",
-                "TypeScript",
-                "CSS",
-                "Frontend"
-            ],
-            "github": "https://github.com/itxDeeni/portfolio-v2",
-            "demo": "https://zahradeen.com",
-            "featured": true,
-            "image": null
-        },
-        {
-            "id": "idor-scan",
-            "title": "IDOR-Scan",
-            "type": "Security Tool",
-            "description": "Automated IDOR & Access Control Testing for REST APIs. Replays API requests with manipulated authentication contexts to identify Insecure Direct Object Reference and Broken Object-Level Authorization vulnerabilities.",
-            "features": [
-                "Import Postman collections & OpenAPI specs",
-                "Replay requests with swapped user contexts",
-                "Role matrix testing for admin/user/guest",
-                "CI/CD integration ready",
-                "JSON/HTML professional reports"
-            ],
-            "tags": [
-                "Go",
-                "Security",
-                "API Testing",
-                "CLI",
-                "OWASP"
-            ],
-            "github": "https://github.com/itxDeeni/idor-scan",
             "demo": null,
             "featured": true,
+            "professional": true,
+            "image": null
+        },
+        {
+            "id": "offer-predictor",
+            "title": "Offer Predictor System",
+            "type": "Fintech Backend",
+            "description": "Predictive scoring engine that evaluates client eligibility using proprietary risk factors to generate tailored loan offers and credit decisions in real time.",
+            "features": [
+                "Custom risk factor evaluation",
+                "Client eligibility scoring",
+                "Dynamic loan offer generation"
+            ],
+            "tags": ["Node.js", "TypeScript", "PostgreSQL", "Fintech"],
+            "github": null,
+            "demo": null,
+            "featured": true,
+            "professional": true,
             "image": null
         },
         {

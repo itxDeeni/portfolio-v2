@@ -10,7 +10,7 @@ export default defineNuxtConfig({
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { name: 'description', content: 'Portfolio of Zahradeen Muazu, a Software Engineer building scalable logic.' }
+                { name: 'description', content: 'Portfolio of Zahradeen Muazu, a Software Engineer building scalable softwares and applications.' }
             ],
             link: [
                 { rel: 'canonical', href: 'https://zahradeen.com' },

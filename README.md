@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-Visit `https://zahradeen.com` or `http://localhost:3000` to see your portfolio.
+Visit http://localhost:3000` to see your portfolio.
 
 ### Build for Production
 
