@@ -7,12 +7,9 @@
         </h1>
         
         <div class="open-to-work">
-          <span class="comment-line">/** 
-           * I'm currently looking for new opportunities,
-           * and my inbox is always open. Whether you have 
-           * a question, a project idea, or just want to say hi,
-           * I'll do my best to get back to you!
-           */</span>
+          <p class="contact-intro">I'm currently open to new opportunities and interesting projects.
+          As a software engineer, I enjoy building scalable systems, designing clean APIs, and tackling real-world engineering problems.</p>
+          <p class="contact-intro">Whether you have a project in mind, an opportunity, or just want to say hi, feel free to reach out — my inbox is always open.</p>
         </div>
         
         <div class="contact-card">
@@ -131,14 +128,12 @@ const submitForm = async () => {
   margin-bottom: var(--spacing-md);
 }
 
-.comment-line {
-  font-family: var(--font-mono);
-  font-size: 0.95rem;
+.contact-intro {
+  font-size: 0.97rem;
   color: var(--text-muted);
-  white-space: pre-line;
+  font-weight: 300;
   line-height: 1.8;
-  display: inline-block;
-  text-align: left;
+  margin-bottom: var(--spacing-sm);
 }
 
 .form-group {
