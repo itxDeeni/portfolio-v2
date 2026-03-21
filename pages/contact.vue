@@ -130,7 +130,7 @@ const submitForm = async () => {
 
 .contact-intro {
   font-size: 0.97rem;
-  color: var(--text-muted);
+  color: #8b949e;
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: var(--spacing-sm);
