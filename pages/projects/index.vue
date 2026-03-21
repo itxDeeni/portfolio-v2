@@ -24,7 +24,8 @@
             <div class="card-header">
               <h3 class="project-title">{{ project.title || project.name }}</h3>
               <div class="project-icons">
-                 <span v-if="project.favorite || project.featured" class="icon-star">★</span>
+                 <span v-if="project.professional" class="icon-pro" title="Professional / Proprietary">🏢</span>
+                 <span v-else-if="project.favorite || project.featured" class="icon-star">★</span>
               </div>
             </div>
             
@@ -37,13 +38,17 @@
             </div>
             
             <div class="card-footer">
-              <NuxtLink v-if="project.id" :to="'/projects/' + project.id" class="link-details">
+              <NuxtLink v-if="project.id && !project.professional" :to="'/projects/' + project.id" class="link-details">
                 ./details
               </NuxtLink>
+              <span v-else-if="project.professional" class="proprietary-note">// proprietary</span>
               <span v-else></span>
               
               <a v-if="project.github" :href="project.github" target="_blank" class="link-github">
                 <span class="icon-gh">gh</span>source
+              </a>
+              <a v-else-if="project.demo" :href="project.demo" target="_blank" class="link-github">
+                <span class="icon-gh">↗</span>live
               </a>
             </div>
           </div>
@@ -61,6 +66,7 @@ const activeCategory = ref('all')
 
 // Flatten all projects into one list with categories
 const allProjects = [
+    ...projectsData.professional.map(p => ({ ...p, category: 'professional' })),
     ...projectsData.featured,
     ...projectsData.github.security.map(p => ({ ...p, category: 'security' })),
     ...projectsData.github.backend.map(p => ({ ...p, category: 'backend' })),
@@ -70,6 +76,7 @@ const allProjects = [
 
 const categories = [
   { id: 'all', name: 'All' },
+  { id: 'professional', name: '🏢 Professional' },
   { id: 'security', name: 'Security' },
   { id: 'backend', name: 'Backend' },
   { id: 'fullstack', name: 'Fullstack' },
@@ -80,7 +87,7 @@ const filteredProjects = computed(() => {
   if (activeCategory.value === 'all') {
     return allProjects
   }
-  return allProjects.filter(p => p.category === activeCategory.value)
+  return allProjects.filter(p => p.category === activeCategory.value || p.professional && activeCategory.value === 'professional')
 })
 
 const getTagClass = (tag) => {
@@ -197,5 +204,15 @@ const getTagClass = (tag) => {
 
 .icon-gh {
   font-weight: bold;
+}
+
+.icon-pro {
+  font-size: 1rem;
+}
+
+.proprietary-note {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 </style>

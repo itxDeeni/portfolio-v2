@@ -1,4 +1,70 @@
 {
+    "professional": [
+        {
+            "id": "bank-statement-processing",
+            "title": "Centralised Bank Statement Processing System",
+            "type": "Fintech Backend",
+            "description": "Backend application connecting with partner APIs to fetch customer bank statements and process them into different output formats.",
+            "features": [
+                "Multi-partner API integrations",
+                "Multiple output format transformations",
+                "High-throughput processing pipeline"
+            ],
+            "tags": ["Node.js", "TypeScript", "REST API", "Fintech"],
+            "github": null,
+            "demo": null,
+            "professional": true,
+            "image": null
+        },
+        {
+            "id": "financial-data-extraction",
+            "title": "Customer Financial Data Extraction Service",
+            "type": "Fintech Backend",
+            "description": "Service that analyses bank statements to extract critical financial data for credit scoring and loan decisions.",
+            "features": [
+                "Bank statement parsing and analysis",
+                "Credit scoring data extraction",
+                "Loan decision support"
+            ],
+            "tags": ["Node.js", "TypeScript", "Java", "Spring Boot", "Fintech"],
+            "github": null,
+            "demo": null,
+            "professional": true,
+            "image": null
+        },
+        {
+            "id": "offer-predictor",
+            "title": "Offer Predictor System",
+            "type": "Fintech Backend",
+            "description": "Predictive scoring tool that evaluates client eligibility and creates tailored loan offers using custom risk factors.",
+            "features": [
+                "Custom risk factor evaluation",
+                "Client eligibility scoring",
+                "Dynamic loan offer generation"
+            ],
+            "tags": ["Node.js", "TypeScript", "PostgreSQL", "Fintech"],
+            "github": null,
+            "demo": null,
+            "professional": true,
+            "image": null
+        },
+        {
+            "id": "loan-offer-letter",
+            "title": "Loan Offer Letter Generation Service",
+            "type": "Fintech Backend",
+            "description": "Automated generation of customized loan offer letters with compliance and signature handling.",
+            "features": [
+                "Automated letter generation",
+                "Compliance and signature handling",
+                "Kafka-driven async processing"
+            ],
+            "tags": ["Java", "Spring Boot", "Redis", "Kafka", "MySQL", "Fintech"],
+            "github": null,
+            "demo": null,
+            "professional": true,
+            "image": null
+        }
+    ],
     "featured": [
         {
             "id": "suya-com-ng",
