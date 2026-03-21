@@ -18,7 +18,7 @@
                     Building <span class="highlight">scalable</span>, <span class="highlight">secure</span> systems in fintech.
                   </p>
                   <p class="stack-line">
-                    <span class="label">Stack:</span> [Go, Java, Python, TypeScript, Angular, Docker]
+                    <span class="label">Stack:</span> [Go, Java, Python, TypeScript, Vue, Angular, Docker]
                   </p>
                 </div>
                 
