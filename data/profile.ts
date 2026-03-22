@@ -1,15 +1,15 @@
 // Profile data from CV
 export const profile = {
     name: 'Zahradeen Muazu',
-    title: 'Software Engineer',
-    tagline: 'Building scalable, secure systems in fintech',
+    title: 'Software Development Engineer',
+    tagline: 'Building scalable, secure software across the full stack',
 
-    bio: `Software Engineer with 4 years of professional experience building scalable, secure systems in the fintech space. Specialises in high-performance APIs, credit scoring tools, and loan processing services using TypeScript, Angular, Java, Python, Redis, and PostgreSQL. Currently deepening expertise in Go and cloud-native architectures for finance infrastructure.`,
+    bio: `Software Development Engineer with 4 years of professional experience building scalable, secure systems across the full stack — from high-performance APIs and credit scoring tools to frontend interfaces. Works with TypeScript, Angular, Java, Python, Redis, and PostgreSQL. Currently deepening expertise in Go and cloud-native architectures.`,
 
-    shortBio: `I build high-performance APIs and secure financial systems. Currently exploring Go and cloud-native architectures.`,
+    shortBio: `I build high-performance software across the full stack. Currently exploring Go and cloud-native architectures.`,
 
     about: [
-        `I am a backend engineer based in Lagos, Nigeria. My core interests lie at the intersection of backend development, DevSecOps, and fintech. I'm also passionate about information security and actively participate in bug bounty challenges, with a particular focus on finding improper access control and information disclosure vulnerabilities. I enjoy building robust applications and currently work primarily with Go, Java, and Node.js.`,
+        `Hi, I am Zahradeen (Deen). I am a software development engineer based in Lagos, Nigeria. My core interests lie at the intersection of software engineering, DevSecOps, and fintech. I'm also passionate about information security and actively participate in bug bounty challenges, with a particular focus on finding improper access control and information disclosure vulnerabilities. I enjoy building robust applications and currently work primarily with Go, Java, and Node.js.`,
         `Outside of coding, I enjoy reading, tennis, practising martial arts and getting my hands dirty with DIY maintenance on my K24 Honda Accord. I also contribute to the free and open-source software community. For instance, I built and maintain PimpMyParrot, an open-source tool designed to automate the setup of Parrot OS for penetration testing.`,
         `I currently work as a Software Development Engineer at a fintech, where I focus on developing secure financial technologies. Continual learning is a big part of my journey, and one of my long-term professional goals is to become a Google Developer Expert (GDE) for Google Cloud.`,
         `If you're interested in cybersecurity or penetration testing, feel free to check out PimpMyParrot and contribute to the project on my GitHub or GitLab profiles.`,

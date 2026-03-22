@@ -59,6 +59,15 @@
         
         <div class="sidebar">
           <div class="sticky-sidebar">
+            <div class="profile-card">
+              <div class="profile-image-wrapper">
+                <img src="/images/profile.jpg" alt="Zedd at his desk" class="profile-image" />
+                <div class="profile-overlay">
+                  <span class="profile-status"><span class="status-dot"></span> Available for work</span>
+                </div>
+              </div>
+            </div>
+
              <LazyCommonTerminal title="skills.json">
                <div class="skills-container">
                  <div v-for="(category, key) in skills" :key="key" class="skill-category">
@@ -228,6 +237,69 @@ import { skills } from '~/data/skills'
   font-family: var(--font-mono);
   font-size: 0.85rem;
   margin-left: auto;
+}
+
+/* Profile Card */
+.profile-card {
+  margin-bottom: var(--spacing-lg);
+}
+
+.profile-image-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+  transition: box-shadow var(--transition-fast);
+}
+
+.profile-image-wrapper:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.2);
+}
+
+.profile-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(10%);
+  transition: filter var(--transition-fast);
+}
+
+.profile-image-wrapper:hover .profile-image {
+  filter: grayscale(0%);
+}
+
+.profile-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.profile-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-green);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 4px rgba(0, 255, 65, 0); }
 }
 
 /* Skills Sidebar */
