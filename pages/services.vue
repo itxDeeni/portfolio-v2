@@ -13,7 +13,7 @@
           
           <div class="service-block card mt-xl">
             <div class="service-header">
-              <h3><span class="bracket">[</span>01<span class="bracket">]</span> The 120-Day MVP</h3>
+              <h3><span class="bracket">[</span>01<span class="bracket">]</span> From Idea to Launch</h3>
               <span class="service-tag">Launch</span>
             </div>
             <p class="service-desc">
