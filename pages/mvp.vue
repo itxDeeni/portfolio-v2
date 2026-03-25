@@ -12,20 +12,20 @@
       </h1>
       
       <p class="lead">
-        Ship your MVP in 90 days with production-grade architecture. Tell me about your project to get started.
+        You have the idea. I have the engineering. Tell me what you're building and I'll get back to you within 24 hours with a game plan.
       </p>
 
       <div v-if="submitted" class="success-message card mt-xl">
          <div class="terminal-content">
            <span class="success-icon">✔</span>
-           <span class="success-text">Project request received. I'll get back to you shortly.</span>
+           <span class="success-text">Request received. Expect a response within 24 hours with a tailored scope and timeline.</span>
          </div>
       </div>
 
       <form v-else @submit.prevent="submitForm" class="intake-form card mt-xl">
         <div class="form-group">
-          <label for="project-desc" class="form-label"><span class="prompt">></span> What are you building?</label>
-          <textarea id="project-desc" v-model="form.description" rows="4" required class="form-input" placeholder="Describe your vision..." maxlength="1500"></textarea>
+          <label for="project-desc" class="form-label"><span class="prompt">></span> Describe your project</label>
+          <textarea id="project-desc" v-model="form.description" rows="4" required class="form-input" placeholder="What problem does it solve? Who are your users? Any tech preferences?" maxlength="1500"></textarea>
         </div>
 
         <div class="form-group">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label"><span class="prompt">></span> Timeline</label>
+          <label class="form-label"><span class="prompt">></span> When do you need this?</label>
           <div class="radio-group">
             <label class="radio-label">
               <input type="radio" v-model="form.timeline" value="ASAP" required>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label"><span class="prompt">></span> Budget</label>
+          <label class="form-label"><span class="prompt">></span> What's your budget range?</label>
           <div class="radio-group">
             <label class="radio-label">
               <input type="radio" v-model="form.budget" value="$1K–$3K" required>
@@ -83,7 +83,7 @@
         </div>
 
         <div class="form-group">
-          <label for="contact-email" class="form-label"><span class="prompt">></span> Contact Email</label>
+          <label for="contact-email" class="form-label"><span class="prompt">></span> Where should I reply?</label>
           <input type="email" id="contact-email" v-model="form.email" required class="form-input" placeholder="you@domain.com" maxlength="150">
         </div>
 

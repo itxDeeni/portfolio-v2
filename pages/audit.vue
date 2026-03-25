@@ -12,22 +12,21 @@
       </h1>
       
       <p class="lead">
-        Identify vulnerabilities in your frontend, backend, and business logic before attackers do. 
-        A rigorous teardown of your architecture and authorization flows.
+        Your app is live. But is it secure? I manually hunt for the vulnerabilities that automated scanners miss — IDOR, broken auth, business logic abuse, and misconfigurations that could cost you everything.
       </p>
 
       <div class="pricing-grid mt-2xl">
         <div class="pricing-card card">
           <div class="card-header">
-            <h3>API Audit</h3>
+            <h3>API & Auth Audit</h3>
             <div class="price">$1,500</div>
           </div>
           <div class="card-body">
             <ul class="feature-list">
-              <li><span class="prompt">></span> API endpoint testing</li>
-              <li><span class="prompt">></span> Auth & access control validation</li>
-              <li><span class="prompt">></span> IDOR & data exposure checks</li>
-              <li><span class="prompt">></span> Report + fix recommendations</li>
+              <li><span class="prompt">></span> Every API endpoint tested for abuse</li>
+              <li><span class="prompt">></span> Auth flows & session management reviewed</li>
+              <li><span class="prompt">></span> IDOR, data leaks, and enumeration checks</li>
+              <li><span class="prompt">></span> Prioritized report with fix-ready recommendations</li>
             </ul>
           </div>
           <div class="card-footer">
@@ -39,17 +38,17 @@
 
         <div class="pricing-card card highlight-card">
           <div class="card-header">
-            <h3>Full System Audit</h3>
+            <h3>Full System Teardown</h3>
             <div class="price">$3,500</div>
             <div class="badge">RECOMMENDED</div>
           </div>
           <div class="card-body">
             <ul class="feature-list">
-              <li><span class="prompt">></span> Frontend + backend code review</li>
-              <li><span class="prompt">></span> Business logic analysis</li>
-              <li><span class="prompt">></span> Security vulnerabilities search</li>
-              <li><span class="prompt">></span> Architecture & scaling insights</li>
-              <li><span class="prompt">></span> Infrastructure misconfiguration check</li>
+              <li><span class="prompt">></span> End-to-end frontend + backend code review</li>
+              <li><span class="prompt">></span> Business logic tested for abuse scenarios</li>
+              <li><span class="prompt">></span> Deep security vulnerability assessment</li>
+              <li><span class="prompt">></span> Scaling bottleneck & architecture analysis</li>
+              <li><span class="prompt">></span> Cloud & infrastructure misconfiguration audit</li>
             </ul>
           </div>
           <div class="card-footer">
@@ -64,7 +63,7 @@
          <LazyCommonTerminal title="guarantee.md">
             <div class="terminal-content">
                <p class="highlight-text">// ZERO-RISK GUARANTEE</p>
-               <p class="muted-text">If no critical issues are found, the audit scope will be extended at no additional cost until areas for optimization or hardening are identified.</p>
+               <p class="muted-text">If the audit surfaces zero critical or high-severity findings, I extend the scope at no extra charge until we uncover actionable improvements. You always walk away with value.</p>
             </div>
          </LazyCommonTerminal>
       </div>
@@ -74,9 +73,9 @@
 
 <script setup>
 useHead({
-  title: 'Security Audit | Zahradeen Muazu',
+  title: 'Security Audit | Zahradeen Muazu — Find Vulnerabilities Before Attackers Do',
   meta: [
-    { name: 'description', content: 'Book a fullstack security audit or API teardown to find vulnerabilities before attackers do.' }
+    { name: 'description', content: 'Manual security audits for APIs, backends, and full systems. IDOR, broken auth, business logic flaws — found and fixed.' }
   ]
 })
 </script>

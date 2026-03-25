@@ -8,16 +8,16 @@
           </h1>
           
           <p class="lead">
-            Stop waiting months for an agency. Ship your MVP in 90 days. From secure, fintech-grade infrastructure to polished, reactive interfaces, I build production-ready products for a flat rate with a guaranteed delivery date.
+            Most dev agencies take 6 months and blow your budget. I ship production-ready products in 90 days — flat rate, fixed scope, no surprises. Fintech-grade backends, reactive frontends, and infrastructure that actually scales.
           </p>
           
           <div class="service-block card mt-xl">
             <div class="service-header">
-              <h3><span class="bracket">[</span>01<span class="bracket">]</span> The 90-Day MVP Build</h3>
+              <h3><span class="bracket">[</span>01<span class="bracket">]</span> The 90-Day MVP</h3>
               <span class="service-tag">Launch</span>
             </div>
             <p class="service-desc">
-              End-to-end product development. I handle the database architecture, authentication, core user flows, responsive frontend, and deployment. You get a production-ready application in exactly 90 days.
+              From database schema to deployment pipeline — I architect and build the entire product. Auth, payments, core workflows, responsive UI. You focus on your users. I handle the engineering.
             </p>
             <div class="tech-stack">
               <span class="label">Stack:</span> [Go, Java, Node.js, Vue, Nuxt, PostgreSQL]
@@ -31,11 +31,11 @@
 
           <div class="service-block card mt-lg">
             <div class="service-header">
-              <h3><span class="bracket">[</span>02<span class="bracket">]</span> Fix & Scale Your System</h3>
+              <h3><span class="bracket">[</span>02<span class="bracket">]</span> Fix & Scale</h3>
               <span class="service-tag">Fix</span>
             </div>
             <p class="service-desc">
-              Debug performance issues, fix broken flows, and optimize your system for scale and reliability. Stop losing users to a slow or buggy application.
+              Your app is live but something's breaking. Slow queries, crashing endpoints, spaghetti auth logic. I come in, diagnose the root cause, and ship the fix — not a band-aid.
             </p>
             <div class="service-action">
               <NuxtLink to="/mvp" class="btn btn-outline">
@@ -46,15 +46,15 @@
 
           <div class="service-block card mt-lg">
             <div class="service-header">
-              <h3><span class="bracket">[</span>03<span class="bracket">]</span> Backend Teardown & Security Audit</h3>
+              <h3><span class="bracket">[</span>03<span class="bracket">]</span> Security Audit & Teardown</h3>
               <span class="service-tag highlight">Secure</span>
             </div>
             <p class="service-desc">
-              A relentless 48-hour deep-dive into your existing backend codebase. Proactive hunting for IDOR, logic flaws, scaling bottlenecks, and misconfigurations before they hit production.
+              I treat your codebase like an attacker would. IDOR checks, broken access control, business logic abuse, API misconfigurations — the vulnerabilities that automated scanners miss but hackers don't.
             </p>
             <ul class="deliverables">
-               <li><span class="prompt">></span> Comprehensive vulnerability report</li>
-               <li><span class="prompt">></span> Architecture optimization roadmap</li>
+               <li><span class="prompt">></span> Actionable vulnerability report with severity ratings</li>
+               <li><span class="prompt">></span> Architecture hardening roadmap</li>
             </ul>
             <div class="service-action">
               <NuxtLink to="/audit" class="btn btn-primary">
@@ -69,11 +69,11 @@
              <LazyCommonTerminal title="why-me.txt">
                <div class="terminal-content">
                   <ul class="feature-list">
-                    <li>Built fintech systems used in real loan decision-making</li>
-                    <li>Designed credit scoring and risk analysis systems</li>
-                    <li>Active bug bounty hunter (IDOR, access control, API flaws)</li>
-                    <li>Fullstack engineer (Vue, Node, Go, Java)</li>
-                    <li>Focused on performance, scalability, and security</li>
+                    <li>Engineered fintech systems processing real loan decisions</li>
+                    <li>Built credit scoring engines and risk analysis pipelines</li>
+                    <li>Bug bounty hunter — found IDORs, broken auth, and API flaws in production apps</li>
+                    <li>Fullstack across Vue, Node.js, Go, and Java</li>
+                    <li>Every line of code is written for performance, scale, and security</li>
                   </ul>
                </div>
              </LazyCommonTerminal>
@@ -81,16 +81,16 @@
              <LazyCommonTerminal title="./run case-study --idor" class="terminal-mt">
                <div class="terminal-content">
                   <ul class="feature-list">
-                    <li>Discovered an IDOR vulnerability exposing user data via API manipulation</li>
-                    <li>Identified insecure access control patterns in production systems</li>
-                    <li>Experience testing real-world applications for business logic flaws</li>
+                    <li>Found an IDOR that leaked user PII through a predictable API endpoint</li>
+                    <li>Uncovered broken access control allowing horizontal privilege escalation</li>
+                    <li>Tested production apps for business logic abuse and authorization bypass</li>
                   </ul>
                </div>
              </LazyCommonTerminal>
 
              <div class="scarcity-card mt-lg">
-                <p class="scarcity-text">// I work remotely with clients worldwide. Async communication, fast turnaround, and clear deliverables.</p>
-                <p class="scarcity-text highlight-text">// I only take 2–3 projects per month to maintain quality.</p>
+                <p class="scarcity-text">// Timezone-proof workflow. Async updates, Loom walkthroughs, and clear milestones — no meetings unless you want them.</p>
+                <p class="scarcity-text highlight-text">// Limited to 2–3 engagements per month. First come, first served.</p>
              </div>
           </div>
         </div>
@@ -101,9 +101,9 @@
 
 <script setup>
 useHead({
-  title: 'Services | Zahradeen Muazu - Software Engineer',
+  title: 'Services | Zahradeen Muazu — Fullstack Engineer & Security Consultant',
   meta: [
-    { name: 'description', content: 'High-converting, revenue-focused developer services. MVP builds, system scaling, and fullstack security audits.' }
+    { name: 'description', content: 'Ship your MVP in 90 days. Fix broken systems. Audit your security. Premium fullstack engineering and security consulting by Zahradeen Muazu.' }
   ]
 })
 </script>
