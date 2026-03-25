@@ -12,7 +12,7 @@
       </h1>
       
       <p class="lead">
-        You have the idea. I have the engineering. Tell me what you're building and I'll get back to you within 24 hours with a game plan.
+        You have the idea. I have the engineering. Tell me what you're building and I'll get back to you within 24 hours with a 120-day game plan.
       </p>
 
       <div v-if="submitted" class="success-message card mt-xl">

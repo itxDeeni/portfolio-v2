@@ -8,12 +8,12 @@
           </h1>
           
           <p class="lead">
-            Most dev agencies take 6 months and blow your budget. I ship production-ready products in 90 days — flat rate, fixed scope, no surprises. Fintech-grade backends, reactive frontends, and infrastructure that actually scales.
+            Most dev agencies take 6 months and blow your budget. I ship production-ready products in 120 days — flat rate, fixed scope, no surprises. Fintech-grade backends, reactive frontends, and infrastructure that actually scales.
           </p>
           
           <div class="service-block card mt-xl">
             <div class="service-header">
-              <h3><span class="bracket">[</span>01<span class="bracket">]</span> The 90-Day MVP</h3>
+              <h3><span class="bracket">[</span>01<span class="bracket">]</span> The 120-Day MVP</h3>
               <span class="service-tag">Launch</span>
             </div>
             <p class="service-desc">
@@ -103,7 +103,7 @@
 useHead({
   title: 'Services | Zahradeen Muazu — Fullstack Engineer & Security Consultant',
   meta: [
-    { name: 'description', content: 'Ship your MVP in 90 days. Fix broken systems. Audit your security. Premium fullstack engineering and security consulting by Zahradeen Muazu.' }
+    { name: 'description', content: 'Ship your MVP in 120 days. Fix broken systems. Audit your security. Premium fullstack engineering and security consulting by Zahradeen Muazu.' }
   ]
 })
 </script>
