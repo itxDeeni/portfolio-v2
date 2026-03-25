@@ -17,17 +17,17 @@
             <form @submit.prevent="submitForm" class="contact-form">
               <div class="form-group">
                 <label for="name">const name =</label>
-                <input type="text" id="name" v-model="form.name" class="form-control" placeholder='"John Doe"' required>
+                <input type="text" id="name" v-model="form.name" class="form-control" placeholder='"John Doe"' required maxlength="100">
               </div>
               
               <div class="form-group">
                 <label for="email">const email =</label>
-                <input type="email" id="email" v-model="form.email" class="form-control" placeholder='"john@example.com"' required>
+                <input type="email" id="email" v-model="form.email" class="form-control" placeholder='"john@example.com"' required maxlength="150">
               </div>
               
               <div class="form-group">
                 <label for="message">const message =</label>
-                <textarea id="message" v-model="form.message" class="form-control" rows="5" placeholder='"Lets build something awesome..."' required></textarea>
+                <textarea id="message" v-model="form.message" class="form-control" rows="5" placeholder='"Lets build something awesome..."' required maxlength="2000"></textarea>
               </div>
               
               <div class="form-action">
@@ -38,6 +38,9 @@
               
               <div v-if="success" class="success-msg">
                 <span class="icon">✓</span> Message sent successfully!
+              </div>
+              <div v-if="errorMessage" class="error-msg mt-sm">
+                <span class="icon">✗</span> {{ errorMessage }}
               </div>
             </form>
           </LazyCommonTerminal>
@@ -73,8 +76,30 @@ const form = ref({
 
 const sending = ref(false)
 const success = ref(false)
+const errorMessage = ref('')
+
+const validateEmail = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
 
 const submitForm = async () => {
+  errorMessage.value = ''
+  
+  if (!form.value.name.trim() || form.value.name.length > 100) {
+    errorMessage.value = 'Please enter a valid name (max 100 characters).'
+    return
+  }
+  
+  if (!validateEmail(form.value.email) || form.value.email.length > 150) {
+    errorMessage.value = 'Please enter a valid email address.'
+    return
+  }
+  
+  if (!form.value.message.trim() || form.value.message.length > 2000) {
+    errorMessage.value = 'Please enter a valid message (max 2000 characters).'
+    return
+  }
+
   sending.value = true
   
   // Create mailto link with form data
@@ -174,6 +199,14 @@ const submitForm = async () => {
 .success-msg {
   margin-top: var(--spacing-md);
   color: var(--accent-green);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.error-msg {
+  margin-top: var(--spacing-md);
+  color: #ff3366;
   font-family: var(--font-mono);
   font-size: 0.9rem;
   text-align: center;

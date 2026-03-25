@@ -37,6 +37,13 @@
               </li>
             </ul>
           </div>
+
+          <div class="project-cta-banner card mt-xl">
+            <p class="comment">// Need a secure backend, custom internal tool, or full-stack MVP?</p>
+            <NuxtLink to="/services" class="cta-link">
+              // <span class="prompt">➜</span> Execute ~/services to explore the studio.
+            </NuxtLink>
+          </div>
         </div>
 
         <div class="sidebar">
@@ -153,6 +160,38 @@ const project = computed(() => {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+}
+
+.project-cta-banner {
+  background: rgba(0, 255, 65, 0.02);
+  border: 1px dashed var(--accent-green);
+  text-align: center;
+  padding: var(--spacing-lg);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.project-cta-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 65, 0.05);
+}
+
+.comment {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+
+.cta-link {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: color var(--transition-fast);
+}
+
+.cta-link:hover {
+  color: var(--accent-green);
 }
 
 @media (max-width: 768px) {
