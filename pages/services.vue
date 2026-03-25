@@ -88,6 +88,13 @@
                </div>
              </LazyCommonTerminal>
 
+             <div class="call-cta mt-lg">
+                <a href="https://calendly.com/deeny7274/30min" target="_blank" rel="noopener" class="btn btn-call block-btn">
+                  <span class="prompt">➜</span> ./book-free-call
+                </a>
+                <p class="call-hint">30-min intro call • No commitment</p>
+             </div>
+
              <div class="scarcity-card mt-lg">
                 <p class="scarcity-text">// Timezone-proof workflow. Async updates, Loom walkthroughs, and clear milestones — no meetings unless you want them.</p>
                 <p class="scarcity-text highlight-text">// Limited to 2–3 engagements per month. First come, first served.</p>
@@ -318,6 +325,42 @@ useHead({
 .highlight-text {
   color: var(--accent-amber);
   margin-top: var(--spacing-sm);
+}
+
+.call-cta {
+  text-align: center;
+}
+
+.btn-call {
+  font-family: var(--font-mono);
+  background: transparent;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: var(--spacing-xs);
+}
+
+.btn-call:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.block-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.call-hint {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: var(--spacing-xs);
 }
 
 @media (max-width: 900px) {

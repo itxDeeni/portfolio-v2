@@ -93,8 +93,12 @@
         
         <div class="form-actions mt-xl border-top">
           <button type="submit" class="btn btn-primary submit-btn">
-            <span class="prompt" :class="{'text-dark': true}">➜</span> <span class="text-dark">./submit</span>
+            <span class="prompt" :class="{'text-dark': true}">➜</span> <span class="text-dark">./submit-request</span>
           </button>
+          <div class="call-alt mt-lg">
+            <span class="call-alt-text">// Prefer to talk first?</span>
+            <a href="https://calendly.com/deeny7274/30min" target="_blank" rel="noopener" class="call-link">➜ ./book-free-call</a>
+          </div>
         </div>
       </form>
     </div>
@@ -366,6 +370,31 @@ const submitForm = () => {
 .error-text {
   color: #ff3366;
   font-weight: bold;
+}
+
+.call-alt {
+  text-align: center;
+  border-top: 1px dashed var(--border-color);
+  padding-top: var(--spacing-md);
+}
+
+.call-alt-text {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-right: var(--spacing-sm);
+}
+
+.call-link {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.call-link:hover {
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
 @media (max-width: 768px) {

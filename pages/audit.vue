@@ -59,6 +59,14 @@
         </div>
       </div>
 
+      <div class="call-cta-section mt-xl">
+        <p class="call-label">// Not sure which package fits? Let's talk it through.</p>
+        <a href="https://calendly.com/deeny7274/30min" target="_blank" rel="noopener" class="btn btn-call">
+          <span class="prompt">➜</span> ./book-free-call
+        </a>
+        <span class="call-hint">30-min call • No commitment</span>
+      </div>
+
       <div class="guarantee-section mt-2xl">
          <LazyCommonTerminal title="guarantee.md">
             <div class="terminal-content">
@@ -275,6 +283,46 @@ useHead({
 .muted-text {
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.call-cta-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.call-label {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.btn-call {
+  font-family: var(--font-mono);
+  background: transparent;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  padding: 10px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-call:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.call-hint {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }
 
 @media (max-width: 768px) {

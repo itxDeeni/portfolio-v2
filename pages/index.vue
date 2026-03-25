@@ -30,9 +30,12 @@
                     <NuxtLink to="/projects" class="btn btn-primary">
                       View Projects
                     </NuxtLink>
-                    <NuxtLink to="/contact" class="btn">
-                      Contact Me
+                    <NuxtLink to="/services" class="btn">
+                      Services
                     </NuxtLink>
+                    <a href="https://calendly.com/deeny7274/30min" target="_blank" rel="noopener" class="btn btn-call">
+                      Book a Free Call
+                    </a>
                   </div>
                 </div>
               </div>
@@ -168,8 +171,28 @@ const featured = computed(() => projectsData.featured.slice(0, 4))
 
 .cta-group {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-md);
   margin-top: var(--spacing-md);
+}
+
+.btn-call {
+  font-family: var(--font-mono);
+  background: transparent;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-call:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 .section-header {
