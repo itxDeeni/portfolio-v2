@@ -66,16 +66,26 @@ const activeCategory = ref('all')
 
 // Flatten all projects into one list with categories
 const allProjects = [
+    ...projectsData.featured.map(p => ({ ...p, category: p.professional ? 'professional' : 'featured' })),
     ...projectsData.professional.map(p => ({ ...p, category: 'professional' })),
-    ...projectsData.featured,
     ...projectsData.github.security.map(p => ({ ...p, category: 'security' })),
     ...projectsData.github.backend.map(p => ({ ...p, category: 'backend' })),
     ...projectsData.github.fullstack.map(p => ({ ...p, category: 'fullstack' })),
     ...projectsData.github.other.map(p => ({ ...p, category: 'other' }))
 ]
 
+// Deduplicate by id/name so professional items from featured don't double-up
+const seen = new Set()
+const dedupedProjects = allProjects.filter(p => {
+    const key = p.id || p.name
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+})
+
 const categories = [
   { id: 'all', name: 'All' },
+  { id: 'featured', name: '★ Featured' },
   { id: 'professional', name: '🏢 Professional' },
   { id: 'security', name: 'Security' },
   { id: 'backend', name: 'Backend' },
@@ -84,10 +94,8 @@ const categories = [
 ]
 
 const filteredProjects = computed(() => {
-  if (activeCategory.value === 'all') {
-    return allProjects
-  }
-  return allProjects.filter(p => p.category === activeCategory.value || p.professional && activeCategory.value === 'professional')
+  if (activeCategory.value === 'all') return dedupedProjects
+  return dedupedProjects.filter(p => p.category === activeCategory.value)
 })
 
 const getTagClass = (tag) => {

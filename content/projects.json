@@ -35,37 +35,77 @@
     ],
     "featured": [
         {
-            "id": "bank-statement-processing",
-            "title": "Bank Statement Processing System",
-            "type": "Fintech Backend",
-            "description": "Centralised backend application connecting with partner APIs to fetch customer bank statements and transform them into multiple output formats for downstream financial services.",
+            "id": "rexipt",
+            "title": "Rexipt",
+            "type": "SaaS — Receipt & Payments",
+            "description": "Digital receipt management platform that replaces paper receipts with instant, branded, tamper-proof digital receipts. Enables businesses to issue verifiable proof of payment, track sales, and deliver AI-powered insights — while giving customers a centralised hub to manage receipts, warranties, and expense history. I joined as the first backend engineer, laying the API and data architecture foundations before the product went live.",
             "features": [
-                "Multi-partner API integrations",
-                "Multiple output format transformations",
-                "High-throughput processing pipeline"
+                "Digital receipt issuance via email and shareable links",
+                "Tamper-proof, verifiable proof of payment",
+                "AI-powered sales insights and repeat-customer tracking",
+                "Customer expense tracking and receipt management dashboard",
+                "Developer SDK and partner API integrations"
             ],
-            "tags": ["Java", "Spring Boot", "REST API", "Fintech"],
+            "tags": [
+                "Node.js",
+                "TypeScript",
+                "REST API",
+                "PostgreSQL",
+                "SaaS",
+                "Fintech"
+            ],
             "github": null,
-            "demo": null,
+            "demo": "https://rexipt.com",
             "featured": true,
             "professional": true,
+            "role": "First Backend Engineer",
             "image": null
         },
         {
-            "id": "offer-predictor",
-            "title": "Offer Predictor System",
-            "type": "Fintech Backend",
-            "description": "Predictive scoring engine that evaluates client eligibility using proprietary risk factors to generate tailored loan offers and credit decisions in real time.",
+            "id": "suyadotcom",
+            "title": "Suyadotcom",
+            "type": "Restaurant & Food Ordering",
+            "description": "Premium branding and ordering site for a Suya & Grill spot in Lafia, Nasarawa State. Showcases the menu, integrates WhatsApp ordering, and features a visual gallery and an embedded Google Map — all wrapped in a custom reddish-dark theme built to make grilled meats look irresistible.",
             "features": [
-                "Custom risk factor evaluation",
-                "Client eligibility scoring",
-                "Dynamic loan offer generation"
+                "Dynamic menu with Suya, Shawarma & Arabian Tea",
+                "WhatsApp-integrated ordering flow",
+                "Visual food gallery",
+                "Embedded Google Map for navigation",
+                "Founder Spotlight section"
             ],
-            "tags": ["Node.js", "TypeScript", "PostgreSQL", "Fintech"],
+            "tags": [
+                "Nuxt 3",
+                "Vue.js",
+                "CSS",
+                "WhatsApp API"
+            ],
             "github": null,
             "demo": null,
             "featured": true,
-            "professional": true,
+            "image": null
+        },
+        {
+            "id": "fortheeco",
+            "title": "ForTheEco",
+            "type": "Sustainability Tech Platform",
+            "description": "A Nigerian-based platform leveraging technology to drive sustainable economic development and environmental accountability across Africa. ForTheEco served as a hub connecting entrepreneurs, communities, and governments through verified data — measuring economic activity and environmental impact to enable evidence-based decision-making. The platform supported youth-led tech ventures, facilitated community collaboration, and provided training programs for sustainable innovation.",
+            "features": [
+                "Data verification and economic activity measurement",
+                "Community collaboration and partner network (PALs)",
+                "Youth tech training and capacity building",
+                "Investment support for sustainable ventures",
+                "Government and NGO decision-support tools"
+            ],
+            "tags": [
+                "Python",
+                "Django",
+                "Sustainability",
+                "Social Impact",
+                "Nigeria"
+            ],
+            "github": null,
+            "demo": null,
+            "featured": true,
             "image": null
         },
         {
@@ -113,6 +153,27 @@
             "image": null
         },
         {
+            "id": "telegram-scraper",
+            "title": "Freelance Scraper",
+            "type": "Automation Tool",
+            "description": "Go-based tool to scrape and filter freelance tech gigs from public Telegram channels. Filters for tech-related keywords and exports structured data for analysis.",
+            "features": [
+                "Scrapes public Telegram channels",
+                "Tech keyword filtering",
+                "Pagination handling",
+                "JSON export"
+            ],
+            "tags": [
+                "Go",
+                "Web Scraping",
+                "Automation"
+            ],
+            "github": "https://github.com/itxDeeni/Telegram-Scraper",
+            "demo": null,
+            "featured": true,
+            "image": null
+        },
+        {
             "id": "tradekit",
             "title": "TradeKit",
             "type": "Trading Infrastructure",
@@ -138,27 +199,6 @@
             "image": null
         },
         {
-            "id": "telegram-scraper",
-            "title": "Freelance Scraper",
-            "type": "Automation Tool",
-            "description": "Go-based tool to scrape and filter freelance tech gigs from public Telegram channels. Filters for tech-related keywords and exports structured data for analysis.",
-            "features": [
-                "Scrapes public Telegram channels",
-                "Tech keyword filtering",
-                "Pagination handling",
-                "JSON export"
-            ],
-            "tags": [
-                "Go",
-                "Web Scraping",
-                "Automation"
-            ],
-            "github": "https://github.com/itxDeeni/Telegram-Scraper",
-            "demo": null,
-            "featured": true,
-            "image": null
-        },
-        {
             "id": "calcengine",
             "title": "CalcEngine",
             "type": "Rules Engine",
@@ -179,6 +219,40 @@
             "github": null,
             "demo": null,
             "featured": true,
+            "image": null
+        },
+        {
+            "id": "bank-statement-processing",
+            "title": "Bank Statement Processing System",
+            "type": "Fintech Backend",
+            "description": "Centralised backend application connecting with partner APIs to fetch customer bank statements and transform them into multiple output formats for downstream financial services.",
+            "features": [
+                "Multi-partner API integrations",
+                "Multiple output format transformations",
+                "High-throughput processing pipeline"
+            ],
+            "tags": ["Java", "Spring Boot", "REST API", "Fintech"],
+            "github": null,
+            "demo": null,
+            "featured": true,
+            "professional": true,
+            "image": null
+        },
+        {
+            "id": "offer-predictor",
+            "title": "Offer Predictor System",
+            "type": "Fintech Backend",
+            "description": "Predictive scoring engine that evaluates client eligibility using proprietary risk factors to generate tailored loan offers and credit decisions in real time.",
+            "features": [
+                "Custom risk factor evaluation",
+                "Client eligibility scoring",
+                "Dynamic loan offer generation"
+            ],
+            "tags": ["Node.js", "TypeScript", "PostgreSQL", "Fintech"],
+            "github": null,
+            "demo": null,
+            "featured": true,
+            "professional": true,
             "image": null
         }
     ],
