@@ -20,7 +20,7 @@ export const profile = {
     email: 'zahradeenmuazu@yahoo.com',
     whatsapp: '+2348078236426',
     github: 'https://github.com/itxDeeni',
-    linkedin: 'https://linkedin.com/in/zaharadeen-muazu',
+    linkedin: 'https://linkedin.com/in/zahradeenmuazu',
     twitter: 'https://x.com/itxdeeni',
 
     location: 'Lagos, Nigeria',
