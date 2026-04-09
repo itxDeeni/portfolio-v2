@@ -134,7 +134,7 @@ MIT License - feel free to use this template for your own portfolio!
 - **Email**: zahradeenmuazu@yahoo.com
 - **WhatsApp**: +2348078236426
 - **GitHub**: [@itxDeeni](https://github.com/itxDeeni)
-- **LinkedIn**: [zaharadeen-muazu](https://linkedin.com/in/zaharadeen-muazu)
+- **LinkedIn**: [zahradeenmuazu](https://linkedin.com/in/zahradeenmuazu)
 - **X (Twitter)**: [@itxdeeni](https://x.com/itxdeeni)
 
 ---

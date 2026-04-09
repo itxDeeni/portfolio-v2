@@ -54,7 +54,7 @@
              <span class="label">WhatsApp:</span> {{ profile.whatsapp }}
            </a>
            <a :href="profile.linkedin" target="_blank" class="contact-link">
-             <span class="label">LinkedIn:</span> /in/zaharadeen-muazu
+             <span class="label">LinkedIn:</span> /in/zahradeenmuazu
            </a>
            <a :href="profile.twitter" target="_blank" class="contact-link">
              <span class="label">X (Twitter):</span> @itxdeeni
