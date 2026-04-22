@@ -35,6 +35,32 @@
     ],
     "featured": [
         {
+            "id": "sentinai",
+            "title": "SentinAI",
+            "type": "SaaS — AI Security Auditor",
+            "description": "An autonomous AI security auditor that reasons about intended access rules, simulates real-world exploits across the full OWASP Top 10 and smart contract vulnerability classes (SWC), and reports confirmed findings directly in GitHub pull requests — before vulnerabilities reach production.",
+            "features": [
+                "Multi-Agent Orchestration (Architect, Adversary, Guardian)",
+                "Full OWASP Top 10 + SWC coverage",
+                "Automated exploit simulation and validation",
+                "Direct GitHub PR integration and SARIF reporting",
+                "Hybrid Routing (Gemini Flash & Flash Lite) for cost-efficiency"
+            ],
+            "tags": [
+                "Node.js",
+                "TypeScript",
+                "Google Gemini",
+                "Vertex AI",
+                "GitHub API",
+                "Security",
+                "AI"
+            ],
+            "github": "https://github.com/itxDeeni/SentinAI",
+            "demo": "https://sentinai-landing.onrender.com/",
+            "featured": true,
+            "image": null
+        },
+        {
             "id": "rexipt",
             "title": "Rexipt",
             "type": "SaaS — Receipt & Payments",
@@ -258,6 +284,17 @@
     ],
     "github": {
         "security": [
+            {
+                "name": "SentinAI-Core",
+                "description": "The open-source multi-agent security engine powering SentinAI. Features a three-agent pipeline for autonomous vulnerability discovery.",
+                "tags": [
+                    "TypeScript",
+                    "AI",
+                    "Security",
+                    "Google Gemini"
+                ],
+                "github": "https://github.com/itxDeeni/SentinAI-Core"
+            },
             {
                 "name": "PimpMyParrot",
                 "description": "Parrot OS setup/installation script for pentesting tools",

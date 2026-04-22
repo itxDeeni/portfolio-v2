@@ -77,6 +77,11 @@ export const experience = [
 
 export const professionalProjects = [
     {
+        title: 'SentinAI — Autonomous AI Security Auditor',
+        description: 'Multi-agent orchestration pipeline that red-teams GitHub pull requests to find logical vulnerabilities like IDOR and BFL before production.',
+        stack: 'TypeScript, Google Gemini, Vertex AI, GitHub API, Cloud Run'
+    },
+    {
         title: 'Centralised Bank Statement Processing System',
         description: 'Backend application connecting with partner APIs to fetch customer bank statements and process them into different output formats.'
     },
