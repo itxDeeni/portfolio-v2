@@ -90,7 +90,7 @@
 <script setup>
 import projectsData from '~/content/projects.json'
 
-const featured = computed(() => projectsData.featured.slice(0, 4))
+const featured = computed(() => projectsData.featured.slice(0, 6))
 </script>
 
 <style scoped>
