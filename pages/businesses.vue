@@ -23,7 +23,7 @@
       <div class="pricing-grid mt-2xl">
         <div class="pricing-card card">
           <div class="card-header">
-            <h3>Single Page</h3>
+            <h3>Starter</h3>
             <div class="price">$250</div>
             <div class="price-naira">≈ {{ packages[0].naira.value }}</div>
             <div class="price-sub">1 page · 2 days</div>
@@ -39,15 +39,15 @@
             <p class="best-for">Best for: businesses that just need a clean web presence fast.</p>
           </div>
           <div class="card-footer">
-            <NuxtLink to="/mvp?package=single" class="btn btn-outline block-btn">
-              <span class="prompt">➜</span> ./order-single
+            <NuxtLink to="/mvp?package=starter" class="btn btn-outline block-btn">
+              <span class="prompt">➜</span> ./order-starter
             </NuxtLink>
           </div>
         </div>
 
         <div class="pricing-card card">
           <div class="card-header">
-            <h3>Starter</h3>
+            <h3>Standard</h3>
             <div class="price">$400</div>
             <div class="price-naira">≈ {{ packages[1].naira.value }}</div>
             <div class="price-sub">3 pages · 3 days</div>
@@ -63,8 +63,8 @@
             <p class="best-for">Best for: new businesses, no website, or broken site.</p>
           </div>
           <div class="card-footer">
-            <NuxtLink to="/mvp?package=starter" class="btn btn-outline block-btn">
-              <span class="prompt">➜</span> ./order-starter
+            <NuxtLink to="/mvp?package=standard" class="btn btn-outline block-btn">
+              <span class="prompt">➜</span> ./order-standard
             </NuxtLink>
           </div>
         </div>

@@ -142,8 +142,8 @@ const submitted = ref(false)
 const errorMessage = ref('')
 
 const packageMap = {
-  single: { budget: '$250–$1K', label: 'Single Page Package ($250 · 1 page · 2 days)', desc: 'Single landing page: WhatsApp contact, Google Maps, mobile-first, SEO basics. Business name, industry, and any content/photos you have.' },
-  starter: { budget: '$250–$1K', label: 'Starter Package ($400 · 3 pages · 3 days)', desc: 'Starter website project: 3 responsive pages (Home, About, Contact), WhatsApp contact, Google Maps, mobile-first. Business name, industry, and any content/photos you have.' },
+  starter: { budget: '$250–$1K', label: 'Starter Package ($250 · 1 page · 2 days)', desc: 'Single landing page: WhatsApp contact, Google Maps, mobile-first, SEO basics. Business name, industry, and any content/photos you have.' },
+  standard: { budget: '$250–$1K', label: 'Standard Package ($400 · 3 pages · 3 days)', desc: 'Standard website: 3 responsive pages (Home, About, Contact), WhatsApp contact, Google Maps, mobile-first. Business name, industry, and any content/photos you have.' },
   business: { budget: '$250–$1K', label: 'Business Package ($900 · 5–8 pages · 5 days)', desc: 'Business website: gallery, inquiry form, search/filtering, SEO, analytics. Business name, industry, services/menu, and any content/photos.' },
   premium: { budget: '$1K–$3K', label: 'Premium Package ($1,800 · 8–12 pages · 10 days)', desc: 'Premium website with CMS, multi-location, advanced lead routing, CRM integration. Business name, industry, features needed, and any content.' }
 }
