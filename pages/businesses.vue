@@ -27,7 +27,7 @@
       <div class="not-sure-banner mt-2xl">
         <p>
           <strong>Not sure which package you need?</strong>
-          Most established businesses choose <span class="highlight">Business Growth ($900)</span> because it combines a professional website with the tools needed to attract and convert customers.
+          Most established businesses choose <span class="highlight">Business Growth</span> because it combines a professional website with the tools needed to attract and convert customers.
         </p>
         <NuxtLink to="/mvp?package=business" class="not-sure-cta">
           <span class="prompt">➜</span> Tell me about your business
