@@ -12,20 +12,24 @@
       </h1>
       
       <p class="lead">
-        You have the idea. I have the engineering. Tell me what you're building and I'll get back to you within 24 hours with a 4-month game plan.
+        {{ packageLabel ? packageLabel + ' — selected.' : 'You have the idea. I have the engineering.' }}
+        Tell me what you're building and I'll get back to you within 24 hours with a tailored plan.
       </p>
 
       <div v-if="submitted" class="success-message card mt-xl">
          <div class="terminal-content">
            <span class="success-icon">✔</span>
-           <span class="success-text">Request received. Expect a response within 24 hours with a tailored scope and timeline.</span>
+           <span class="success-text">{{ submittedPackage ? packageMap[submittedPackage]?.label + ' — ' : '' }}Request received. Expect a response within 24 hours with a tailored scope, timeline, and 50% deposit link.</span>
          </div>
       </div>
 
       <form v-else @submit.prevent="submitForm" class="intake-form card mt-xl">
+        <div v-if="selectedPackage" class="package-badge">
+          <span class="prompt">></span> {{ packageLabel }} — <span class="badge-text">50% deposit to start</span>
+        </div>
         <div class="form-group">
           <label for="project-desc" class="form-label"><span class="prompt">></span> Describe your project</label>
-          <textarea id="project-desc" v-model="form.description" rows="4" required class="form-input" placeholder="What problem does it solve? Who are your users? Any tech preferences?" maxlength="1500"></textarea>
+          <textarea id="project-desc" v-model="form.description" rows="4" required class="form-input" :placeholder="descriptionPlaceholder" maxlength="1500"></textarea>
         </div>
 
         <div class="form-group">
@@ -68,7 +72,11 @@
           <label class="form-label"><span class="prompt">></span> What's your budget range?</label>
           <div class="radio-group">
             <label class="radio-label">
-              <input type="radio" v-model="form.budget" value="$1K–$3K" required>
+              <input type="radio" v-model="form.budget" value="$250–$1K" required>
+              <span class="radio-custom">$250–$1K</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" v-model="form.budget" value="$1K–$3K">
               <span class="radio-custom">$1K–$3K</span>
             </label>
             <label class="radio-label">
@@ -92,8 +100,10 @@
         </div>
         
         <div class="form-actions mt-xl border-top">
-          <button type="submit" class="btn btn-primary submit-btn">
-            <span class="prompt" :class="{'text-dark': true}">➜</span> <span class="text-dark">./submit-request</span>
+          <button type="submit" class="btn btn-primary submit-btn" :disabled="submitting">
+            <span v-if="submitting" class="prompt" :class="{'text-dark': true}">⏳</span>
+            <span v-else class="prompt" :class="{'text-dark': true}">➜</span>
+            <span class="text-dark">{{ submitting ? 'Sending...' : './submit-request' }}</span>
           </button>
           <div class="call-alt mt-lg">
             <span class="call-alt-text">// Prefer to talk first?</span>
@@ -106,31 +116,61 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+const { public: config } = useRuntimeConfig()
 
 useHead({
   title: 'Start a Project | Zahradeen Muazu',
   meta: [
-    { name: 'description', content: 'Submit a project request for your new MVP.' }
+    { name: 'description', content: 'Submit a project request for your new MVP or business website.' }
   ]
 })
 
+const route = useRoute()
 const submitted = ref(false)
 const errorMessage = ref('')
+
+const packageMap = {
+  single: { budget: '$250–$1K', label: 'Single Page Package ($250 · 1 page · 2 days)', desc: 'Single landing page: WhatsApp contact, Google Maps, mobile-first, SEO basics. Business name, industry, and any content/photos you have.' },
+  starter: { budget: '$250–$1K', label: 'Starter Package ($400 · 3 pages · 3 days)', desc: 'Starter website project: 3 responsive pages (Home, About, Contact), WhatsApp contact, Google Maps, mobile-first. Business name, industry, and any content/photos you have.' },
+  business: { budget: '$250–$1K', label: 'Business Package ($900 · 5–8 pages · 5 days)', desc: 'Business website: gallery, inquiry form, search/filtering, SEO, analytics. Business name, industry, services/menu, and any content/photos.' },
+  premium: { budget: '$1K–$3K', label: 'Premium Package ($1,800 · 8–12 pages · 10 days)', desc: 'Premium website with CMS, multi-location, advanced lead routing, CRM integration. Business name, industry, features needed, and any content.' }
+}
+
+const selectedPackage = ref('')
+const packageLabel = computed(() => packageMap[selectedPackage.value]?.label || '')
+const descriptionPlaceholder = computed(() => packageMap[selectedPackage.value]?.desc || 'What problem does it solve? Who are your users? Any tech preferences?')
 
 const form = ref({
   description: '',
   stage: '',
   timeline: '',
   budget: '',
-  email: ''
+  email: '',
+  package: ''
+})
+
+const submittedPackage = ref('')
+const submitting = ref(false)
+
+onMounted(() => {
+  const pkg = route.query.package
+  if (pkg && packageMap[pkg]) {
+    selectedPackage.value = pkg
+    form.value.package = pkg
+    form.value.budget = packageMap[pkg].budget
+    form.value.timeline = 'ASAP'
+    form.value.stage = 'Idea'
+  }
 })
 
 const validateEmail = (email) => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
-const submitForm = () => {
+const submitForm = async () => {
   errorMessage.value = ''
   
   if (!form.value.description.trim() || form.value.description.length > 1500) {
@@ -138,10 +178,9 @@ const submitForm = () => {
     return
   }
   
-  // Security detail: Validate that dropdown options adhere to allowed enums to stop DOM manipulation attacks
   const validStages = ['Idea', 'MVP in progress', 'Live product']
   const validTimelines = ['ASAP', '2-4 weeks', 'Flexible']
-  const validBudgets = ['$1K–$3K', '$3K–$10K', '$10K+']
+  const validBudgets = ['$250–$1K', '$1K–$3K', '$3K–$10K', '$10K+']
   
   if (!validStages.includes(form.value.stage) || !validTimelines.includes(form.value.timeline) || !validBudgets.includes(form.value.budget)) {
     errorMessage.value = 'Invalid option selected. Please select from the available choices.'
@@ -152,29 +191,46 @@ const submitForm = () => {
     errorMessage.value = 'Please enter a valid email address (max 150 characters).'
     return
   }
-  
-  // Sanitize object before hypothetical network transmission to prevent prototype pollution or XSS
-  const sanitizedPayload = {
-     description: form.value.description.trim(),
-     stage: form.value.stage,
-     timeline: form.value.timeline,
-     budget: form.value.budget,
-     email: form.value.email.trim()
+
+  if (!config.web3formsKey) {
+    errorMessage.value = 'Form not configured yet. Email Deeny7274@gmail.com directly.'
+    return
   }
 
-  // Normally we would send sanitizedPayload to an API or service like Formspree/Tally.
-  // We simulate a fast response directly on the client.
-  setTimeout(() => {
-    submitted.value = true
-    // Reset form for next time if they come back
-    form.value = {
-      description: '',
-      stage: '',
-      timeline: '',
-      budget: '',
-      email: ''
+  submitting.value = true
+
+  const payload = {
+    access_key: config.web3formsKey,
+    subject: `New Project Request — ${form.value.package || 'Custom'} Package`,
+    from_name: 'Zahradeen Portfolio',
+    replyto: form.value.email.trim(),
+    package: form.value.package || 'custom',
+    description: form.value.description.trim(),
+    stage: form.value.stage,
+    timeline: form.value.timeline,
+    budget: form.value.budget,
+    email: form.value.email.trim()
+  }
+
+  try {
+    const res = await $fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: payload
+    })
+
+    if (res.success) {
+      submittedPackage.value = form.value.package
+      submitted.value = true
+      form.value = { description: '', stage: '', timeline: '', budget: '', email: '', package: '' }
+    } else {
+      errorMessage.value = 'Submission failed. Try emailing Deeny7274@gmail.com directly.'
     }
-  }, 500)
+  } catch (e) {
+    errorMessage.value = 'Network error. Try emailing Deeny7274@gmail.com directly.'
+  } finally {
+    submitting.value = false
+  }
 }
 </script>
 
@@ -201,6 +257,21 @@ const submitForm = () => {
 
 .back-link:hover {
   color: var(--accent-green);
+}
+
+.package-badge {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-green);
+  background: rgba(0, 255, 65, 0.06);
+  border: 1px solid rgba(0, 255, 65, 0.15);
+  border-radius: 4px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.badge-text {
+  color: var(--accent-amber);
 }
 
 .command-line {
@@ -329,6 +400,12 @@ const submitForm = () => {
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 25px rgba(0, 255, 65, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .text-dark {

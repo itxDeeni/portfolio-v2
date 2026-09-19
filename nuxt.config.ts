@@ -4,6 +4,12 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ['@nuxt/content'],
     css: ['~/assets/main.css'],
+    runtimeConfig: {
+        web3formsKey: process.env.WEB3FORMS_KEY || '',
+        public: {
+            web3formsKey: process.env.WEB3FORMS_KEY || ''
+        }
+    },
     app: {
         head: {
             title: 'Zahradeen Muazu | Software Engineer',

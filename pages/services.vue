@@ -62,6 +62,25 @@
               </NuxtLink>
             </div>
           </div>
+
+          <div class="service-block card mt-lg">
+            <div class="service-header">
+              <h3><span class="bracket">[</span>04<span class="bracket">]</span> Business Websites</h3>
+              <span class="service-tag">Sites</span>
+            </div>
+            <p class="service-desc">
+              Premium websites for real businesses — real estate, restaurants, hotels, clinics, schools. WhatsApp inquiries, galleries, menu/listings, Maps, SEO. Ships in 3–10 days. Global delivery.
+            </p>
+            <ul class="deliverables">
+               <li><span class="prompt">></span> $400 Starter · $900 Business · $1,800 Premium — 50% deposit</li>
+               <li><span class="prompt">></span> Live proof: Output Galaxy, Suya.com.ng</li>
+            </ul>
+            <div class="service-action">
+              <NuxtLink to="/businesses" class="btn btn-outline">
+                <span class="prompt">➜</span> ./view-business-sites
+              </NuxtLink>
+            </div>
+          </div>
         </div>
         
         <div class="sidebar">
