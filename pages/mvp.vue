@@ -91,8 +91,17 @@
         </div>
 
         <div class="form-group">
-          <label for="contact-email" class="form-label"><span class="prompt">></span> Where should I reply?</label>
-          <input type="email" id="contact-email" v-model="form.email" required class="form-input" placeholder="you@domain.com" maxlength="150">
+          <label class="form-label"><span class="prompt">></span> How should I reach you?</label>
+          <div class="contact-grid">
+            <div class="contact-field">
+              <label for="contact-email" class="form-label sub-label">Email</label>
+              <input type="email" id="contact-email" v-model="form.email" required class="form-input" placeholder="you@domain.com" maxlength="150">
+            </div>
+            <div class="contact-field">
+              <label for="contact-whatsapp" class="form-label sub-label">WhatsApp <span class="optional">(optional)</span></label>
+              <input type="tel" id="contact-whatsapp" v-model="form.whatsapp" class="form-input" placeholder="+234 801 234 5678" maxlength="20">
+            </div>
+          </div>
         </div>
 
         <div v-if="errorMessage" class="error-message mt-lg">
@@ -149,6 +158,7 @@ const form = ref({
   timeline: '',
   budget: '',
   email: '',
+  whatsapp: '',
   package: ''
 })
 
@@ -209,7 +219,8 @@ const submitForm = async () => {
     stage: form.value.stage,
     timeline: form.value.timeline,
     budget: form.value.budget,
-    email: form.value.email.trim()
+    email: form.value.email.trim(),
+    whatsapp: form.value.whatsapp.trim()
   }
 
   try {
@@ -222,7 +233,7 @@ const submitForm = async () => {
     if (res.success) {
       submittedPackage.value = form.value.package
       submitted.value = true
-      form.value = { description: '', stage: '', timeline: '', budget: '', email: '', package: '' }
+      form.value = { description: '', stage: '', timeline: '', budget: '', email: '', whatsapp: '', package: '' }
     } else {
       errorMessage.value = 'Submission failed. Try emailing Deeny7274@gmail.com directly.'
     }
